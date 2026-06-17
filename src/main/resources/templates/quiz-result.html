@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Quiz Result</title>
+</head>
+<body>
+
+<h1>Quiz finished</h1>
+
+<p>
+  Your score:
+  <strong th:text="${score}"></strong>
+  /
+  <strong th:text="${totalQuestions}"></strong>
+</p>
+
+<p>
+  Percentage:
+  <strong th:text="${#numbers.formatDecimal(percentage, 1, 2)}"></strong>%
+</p>
+
+<h2 th:text="${passed ? 'PASSED' : 'FAILED'}"></h2>
+
+<p>Passing threshold: 75%</p>
+
+<a href="/quiz/start">Try again</a>
+<br>
+<a href="/">Back to questions</a>
+
+</body>
+</html>

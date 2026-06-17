@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>QA Interview Questions</title>
+</head>
+<body>
+
+<h1>Senior QA Automation Engineer - Questions</h1>
+
+<a href="/quiz/start">Start full quiz</a>
+
+<form method="get" action="/">
+    <label for="category">Filter by category:</label>
+
+    <select name="category" id="category">
+        <option value="">All</option>
+        <option th:each="category : ${categories}"
+                th:value="${category}"
+                th:text="${category}"
+                th:selected="${category == selectedCategory}">
+        </option>
+    </select>
+
+    <button type="submit">Filter</button>
+</form>
+
+<hr>
+
+<ul>
+    <li th:each="question : ${questions}">
+        <a th:href="@{/questions/{id}(id=${question.id})}"
+           th:text="${question.category + ' | ' + question.difficulty + ' | ' + question.content}">
+        </a>
+    </li>
+</ul>
+
+</body>
+</html>

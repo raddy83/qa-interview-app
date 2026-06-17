@@ -1,0 +1,2002 @@
+[
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "What is the main difference between == and equals() in Java?",
+    "explanation": "== compares primitive values or object references, while equals() compares logical equality when properly overridden.",
+    "answers": [
+      {
+        "content": "== compares references for objects, equals() compares logical equality",
+        "correct": true
+      },
+      {
+        "content": "equals() compares references and == compares objects",
+        "correct": false
+      },
+      {
+        "content": "They always behave exactly the same",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "What is the purpose of the hashCode() method?",
+    "explanation": "hashCode() supports hash-based collections such as HashMap and HashSet and should be consistent with equals().",
+    "answers": [
+      {
+        "content": "To support hash-based collections",
+        "correct": true
+      },
+      {
+        "content": "To encrypt object data",
+        "correct": false
+      },
+      {
+        "content": "To compare object references only",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "What is immutability in Java?",
+    "explanation": "An immutable object cannot change its state after construction, which helps with thread-safety and predictability.",
+    "answers": [
+      {
+        "content": "Object state cannot be changed after creation",
+        "correct": true
+      },
+      {
+        "content": "Object can be changed only by private methods",
+        "correct": false
+      },
+      {
+        "content": "Object can never be garbage collected",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "What is the difference between checked and unchecked exceptions?",
+    "explanation": "Checked exceptions must be handled or declared, while unchecked exceptions extend RuntimeException and do not require explicit handling.",
+    "answers": [
+      {
+        "content": "Checked exceptions require handling or declaration",
+        "correct": true
+      },
+      {
+        "content": "Unchecked exceptions must always be caught",
+        "correct": false
+      },
+      {
+        "content": "Checked exceptions extend RuntimeException",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "What is Optional used for?",
+    "explanation": "Optional is a container that can represent the presence or absence of a value and helps reduce null-related errors.",
+    "answers": [
+      {
+        "content": "To represent a value that may be absent",
+        "correct": true
+      },
+      {
+        "content": "To make every field nullable",
+        "correct": false
+      },
+      {
+        "content": "To improve loop performance",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "What is the Stream API used for?",
+    "explanation": "The Stream API allows functional-style processing of collections, including filtering, mapping and reducing.",
+    "answers": [
+      {
+        "content": "Functional-style processing of data collections",
+        "correct": true
+      },
+      {
+        "content": "Opening network sockets",
+        "correct": false
+      },
+      {
+        "content": "Managing database transactions",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "What is the difference between map() and flatMap() in streams?",
+    "explanation": "map transforms each element one-to-one, while flatMap transforms and flattens nested structures into one stream.",
+    "answers": [
+      {
+        "content": "flatMap flattens nested streams after transformation",
+        "correct": true
+      },
+      {
+        "content": "map always removes duplicates",
+        "correct": false
+      },
+      {
+        "content": "flatMap can only be used with integers",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "What is a functional interface?",
+    "explanation": "A functional interface has exactly one abstract method and can be used with lambda expressions.",
+    "answers": [
+      {
+        "content": "An interface with exactly one abstract method",
+        "correct": true
+      },
+      {
+        "content": "An interface with only static methods",
+        "correct": false
+      },
+      {
+        "content": "A class with one public method",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "Why should fields injected by constructor often be final?",
+    "explanation": "Final fields make dependencies explicit and immutable after construction, which improves testability and safety.",
+    "answers": [
+      {
+        "content": "They make dependencies immutable after construction",
+        "correct": true
+      },
+      {
+        "content": "They force Spring to use field injection",
+        "correct": false
+      },
+      {
+        "content": "They disable dependency injection",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "What is the difference between ArrayList and LinkedList?",
+    "explanation": "ArrayList is backed by an array and is efficient for random access, while LinkedList is node-based and can be better for frequent insertions/removals in specific positions.",
+    "answers": [
+      {
+        "content": "ArrayList is array-backed, LinkedList is node-based",
+        "correct": true
+      },
+      {
+        "content": "LinkedList always uses less memory",
+        "correct": false
+      },
+      {
+        "content": "ArrayList cannot store null values",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "What is a race condition?",
+    "explanation": "A race condition occurs when program behavior depends on unpredictable timing between threads accessing shared state.",
+    "answers": [
+      {
+        "content": "Incorrect behavior caused by timing of concurrent operations",
+        "correct": true
+      },
+      {
+        "content": "A compiler optimization error",
+        "correct": false
+      },
+      {
+        "content": "An exception thrown by HashMap",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "What is volatile in Java?",
+    "explanation": "volatile ensures visibility of changes to a variable across threads, but it does not make compound operations atomic.",
+    "answers": [
+      {
+        "content": "It improves visibility of variable changes across threads",
+        "correct": true
+      },
+      {
+        "content": "It makes all operations atomic",
+        "correct": false
+      },
+      {
+        "content": "It replaces synchronized blocks",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Java",
+    "difficulty": "Senior",
+    "content": "What is the purpose of synchronized?",
+    "explanation": "synchronized protects critical sections so only one thread at a time can execute them for the same monitor.",
+    "answers": [
+      {
+        "content": "To restrict concurrent access to a critical section",
+        "correct": true
+      },
+      {
+        "content": "To make code run faster",
+        "correct": false
+      },
+      {
+        "content": "To serialize objects to JSON",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "What is the Page Object Model pattern?",
+    "explanation": "Page Object Model separates test logic from locators and page actions, improving maintainability.",
+    "answers": [
+      {
+        "content": "A pattern separating page structure and test logic",
+        "correct": true
+      },
+      {
+        "content": "A database modeling technique",
+        "correct": false
+      },
+      {
+        "content": "A browser rendering engine",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "Why should tests avoid Thread.sleep()?",
+    "explanation": "Thread.sleep() introduces fixed waits that make tests slow and flaky; explicit waits are more reliable.",
+    "answers": [
+      {
+        "content": "It creates slow and flaky tests",
+        "correct": true
+      },
+      {
+        "content": "It disables browser cookies",
+        "correct": false
+      },
+      {
+        "content": "It prevents screenshots",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "What is an explicit wait in Selenium?",
+    "explanation": "An explicit wait waits for a specific condition before continuing, such as element visibility or clickability.",
+    "answers": [
+      {
+        "content": "Waiting for a specific condition",
+        "correct": true
+      },
+      {
+        "content": "Stopping the JVM for a fixed time",
+        "correct": false
+      },
+      {
+        "content": "Waiting until the server restarts",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "What is a stale element reference?",
+    "explanation": "It happens when a WebElement reference points to an element that is no longer attached to the current DOM.",
+    "answers": [
+      {
+        "content": "A reference to an element no longer attached to the DOM",
+        "correct": true
+      },
+      {
+        "content": "A missing browser driver",
+        "correct": false
+      },
+      {
+        "content": "A CSS syntax error",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "Which locator strategy is usually the most stable?",
+    "explanation": "Stable dedicated attributes such as data-testid are usually better than brittle absolute XPath selectors.",
+    "answers": [
+      {
+        "content": "Dedicated stable attributes like data-testid",
+        "correct": true
+      },
+      {
+        "content": "Absolute XPath from html/body",
+        "correct": false
+      },
+      {
+        "content": "Random generated CSS classes",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "What is the difference between findElement and findElements?",
+    "explanation": "findElement returns a single WebElement or throws if not found; findElements returns a list that may be empty.",
+    "answers": [
+      {
+        "content": "findElement can throw, findElements returns an empty list",
+        "correct": true
+      },
+      {
+        "content": "findElements always throws when empty",
+        "correct": false
+      },
+      {
+        "content": "They are identical",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "What is browser driver compatibility important for?",
+    "explanation": "The browser driver must be compatible with the browser version to avoid execution failures.",
+    "answers": [
+      {
+        "content": "To avoid failures caused by browser-driver mismatch",
+        "correct": true
+      },
+      {
+        "content": "To improve SQL query speed",
+        "correct": false
+      },
+      {
+        "content": "To enable Java generics",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "What is headless browser execution?",
+    "explanation": "Headless execution runs the browser without a visible UI, often used in CI pipelines.",
+    "answers": [
+      {
+        "content": "Running browser tests without visible UI",
+        "correct": true
+      },
+      {
+        "content": "Running tests without assertions",
+        "correct": false
+      },
+      {
+        "content": "Running tests only on mobile devices",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "Why use screenshots on test failure?",
+    "explanation": "Screenshots provide visual context that helps debug UI failures.",
+    "answers": [
+      {
+        "content": "They help debug the visual state at failure time",
+        "correct": true
+      },
+      {
+        "content": "They guarantee the test will pass",
+        "correct": false
+      },
+      {
+        "content": "They replace assertions",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "What is Selenium Grid used for?",
+    "explanation": "Selenium Grid enables running tests on multiple browsers, platforms or machines in parallel.",
+    "answers": [
+      {
+        "content": "Distributed and parallel browser execution",
+        "correct": true
+      },
+      {
+        "content": "Database migration",
+        "correct": false
+      },
+      {
+        "content": "API mocking",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "What is a flaky UI test?",
+    "explanation": "A flaky test produces inconsistent results without code changes, often due to timing, data or environment issues.",
+    "answers": [
+      {
+        "content": "A test that passes and fails inconsistently",
+        "correct": true
+      },
+      {
+        "content": "A test with many assertions",
+        "correct": false
+      },
+      {
+        "content": "A test that only runs locally",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "Why should Page Objects not contain assertions in many designs?",
+    "explanation": "Keeping assertions in test classes and actions in Page Objects improves separation of concerns.",
+    "answers": [
+      {
+        "content": "To keep page actions separate from test verification",
+        "correct": true
+      },
+      {
+        "content": "Because Selenium blocks all assertions",
+        "correct": false
+      },
+      {
+        "content": "Because assertions only work in REST tests",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Selenium",
+    "difficulty": "Senior",
+    "content": "What is the purpose of WebDriverManager?",
+    "explanation": "WebDriverManager can automatically manage browser driver binaries and versions.",
+    "answers": [
+      {
+        "content": "Managing browser driver binaries automatically",
+        "correct": true
+      },
+      {
+        "content": "Generating test reports",
+        "correct": false
+      },
+      {
+        "content": "Mocking HTTP responses",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "REST API",
+    "difficulty": "Senior",
+    "content": "What does HTTP 201 Created mean?",
+    "explanation": "HTTP 201 means the request succeeded and a new resource was created.",
+    "answers": [
+      {
+        "content": "The request created a new resource",
+        "correct": true
+      },
+      {
+        "content": "The request was unauthorized",
+        "correct": false
+      },
+      {
+        "content": "The server found no resource",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "REST API",
+    "difficulty": "Senior",
+    "content": "What does HTTP 400 Bad Request usually indicate?",
+    "explanation": "HTTP 400 usually means the request is malformed or invalid from the client's side.",
+    "answers": [
+      {
+        "content": "The client sent an invalid request",
+        "correct": true
+      },
+      {
+        "content": "The server is permanently down",
+        "correct": false
+      },
+      {
+        "content": "Authentication succeeded",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "REST API",
+    "difficulty": "Senior",
+    "content": "What is the difference between PUT and PATCH?",
+    "explanation": "PUT usually replaces a resource, while PATCH partially updates it.",
+    "answers": [
+      {
+        "content": "PUT replaces, PATCH partially updates",
+        "correct": true
+      },
+      {
+        "content": "PATCH deletes, PUT reads",
+        "correct": false
+      },
+      {
+        "content": "They are always identical",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "REST API",
+    "difficulty": "Senior",
+    "content": "What is idempotency in HTTP?",
+    "explanation": "An idempotent operation can be repeated multiple times with the same intended effect.",
+    "answers": [
+      {
+        "content": "Repeating the request has the same intended effect",
+        "correct": true
+      },
+      {
+        "content": "The request must return XML",
+        "correct": false
+      },
+      {
+        "content": "The endpoint requires OAuth",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "REST API",
+    "difficulty": "Senior",
+    "content": "Which HTTP methods are typically idempotent?",
+    "explanation": "GET, PUT and DELETE are typically considered idempotent, assuming correct implementation.",
+    "answers": [
+      {
+        "content": "GET, PUT and DELETE",
+        "correct": true
+      },
+      {
+        "content": "POST only",
+        "correct": false
+      },
+      {
+        "content": "CONNECT only",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "REST API",
+    "difficulty": "Senior",
+    "content": "What should be validated in API testing?",
+    "explanation": "Status code, response body, schema, headers, business rules, performance and error handling should be validated.",
+    "answers": [
+      {
+        "content": "Status, schema, body, headers and business rules",
+        "correct": true
+      },
+      {
+        "content": "Only response time",
+        "correct": false
+      },
+      {
+        "content": "Only server logs",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "REST API",
+    "difficulty": "Senior",
+    "content": "What is JSON Schema validation used for?",
+    "explanation": "JSON Schema validation checks whether a response has the expected structure and data types.",
+    "answers": [
+      {
+        "content": "Checking response structure and data types",
+        "correct": true
+      },
+      {
+        "content": "Encrypting API traffic",
+        "correct": false
+      },
+      {
+        "content": "Generating browser locators",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "REST API",
+    "difficulty": "Senior",
+    "content": "What is contract testing?",
+    "explanation": "Contract testing verifies that service providers and consumers follow an agreed API contract.",
+    "answers": [
+      {
+        "content": "Verifying provider-consumer API expectations",
+        "correct": true
+      },
+      {
+        "content": "Testing only CSS contracts",
+        "correct": false
+      },
+      {
+        "content": "Checking employment contracts",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "REST API",
+    "difficulty": "Senior",
+    "content": "What is the purpose of correlation IDs?",
+    "explanation": "Correlation IDs help trace a request across distributed systems and logs.",
+    "answers": [
+      {
+        "content": "Tracing requests across services and logs",
+        "correct": true
+      },
+      {
+        "content": "Compressing JSON payloads",
+        "correct": false
+      },
+      {
+        "content": "Replacing authentication",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "REST API",
+    "difficulty": "Senior",
+    "content": "What is a negative API test?",
+    "explanation": "A negative API test verifies behavior for invalid, unauthorized or unexpected inputs.",
+    "answers": [
+      {
+        "content": "Testing invalid or unexpected inputs",
+        "correct": true
+      },
+      {
+        "content": "Testing only happy paths",
+        "correct": false
+      },
+      {
+        "content": "Testing UI animations",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "REST API",
+    "difficulty": "Senior",
+    "content": "What is API rate limiting?",
+    "explanation": "Rate limiting restricts how many requests a client can make in a time window.",
+    "answers": [
+      {
+        "content": "Restricting request volume over time",
+        "correct": true
+      },
+      {
+        "content": "Sorting JSON arrays",
+        "correct": false
+      },
+      {
+        "content": "Caching browser sessions",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "REST API",
+    "difficulty": "Senior",
+    "content": "What is the difference between authentication and authorization?",
+    "explanation": "Authentication verifies identity, while authorization verifies permissions.",
+    "answers": [
+      {
+        "content": "Authentication checks identity, authorization checks permissions",
+        "correct": true
+      },
+      {
+        "content": "Authorization checks identity, authentication checks permissions",
+        "correct": false
+      },
+      {
+        "content": "They are the same thing",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "SQL",
+    "difficulty": "Senior",
+    "content": "What is the difference between INNER JOIN and LEFT JOIN?",
+    "explanation": "INNER JOIN returns matching rows from both tables, while LEFT JOIN returns all rows from the left table and matching rows from the right.",
+    "answers": [
+      {
+        "content": "INNER returns matches only, LEFT returns all left rows",
+        "correct": true
+      },
+      {
+        "content": "LEFT JOIN always removes duplicates",
+        "correct": false
+      },
+      {
+        "content": "INNER JOIN returns all rows from both tables",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "SQL",
+    "difficulty": "Senior",
+    "content": "What is an index used for?",
+    "explanation": "An index improves read/query performance by allowing faster lookups, often at the cost of additional storage and slower writes.",
+    "answers": [
+      {
+        "content": "Faster lookups at the cost of storage/write overhead",
+        "correct": true
+      },
+      {
+        "content": "Encrypting table data",
+        "correct": false
+      },
+      {
+        "content": "Replacing primary keys",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "SQL",
+    "difficulty": "Senior",
+    "content": "What is a primary key?",
+    "explanation": "A primary key uniquely identifies each row in a table.",
+    "answers": [
+      {
+        "content": "A unique row identifier",
+        "correct": true
+      },
+      {
+        "content": "A nullable description field",
+        "correct": false
+      },
+      {
+        "content": "A backup table",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "SQL",
+    "difficulty": "Senior",
+    "content": "What is a foreign key?",
+    "explanation": "A foreign key links rows between tables and enforces referential integrity.",
+    "answers": [
+      {
+        "content": "A column referencing a key in another table",
+        "correct": true
+      },
+      {
+        "content": "A hidden performance setting",
+        "correct": false
+      },
+      {
+        "content": "A duplicate primary key",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "SQL",
+    "difficulty": "Senior",
+    "content": "What is normalization?",
+    "explanation": "Normalization organizes data to reduce redundancy and improve data integrity.",
+    "answers": [
+      {
+        "content": "Organizing data to reduce redundancy",
+        "correct": true
+      },
+      {
+        "content": "Duplicating data for faster reads only",
+        "correct": false
+      },
+      {
+        "content": "Deleting all indexes",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "SQL",
+    "difficulty": "Senior",
+    "content": "What is a transaction?",
+    "explanation": "A transaction is a unit of work that should complete fully or not at all, following ACID principles.",
+    "answers": [
+      {
+        "content": "A unit of work with ACID properties",
+        "correct": true
+      },
+      {
+        "content": "A read-only SQL query",
+        "correct": false
+      },
+      {
+        "content": "A database user role",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "SQL",
+    "difficulty": "Senior",
+    "content": "What does ACID stand for?",
+    "explanation": "ACID stands for Atomicity, Consistency, Isolation and Durability.",
+    "answers": [
+      {
+        "content": "Atomicity, Consistency, Isolation, Durability",
+        "correct": true
+      },
+      {
+        "content": "Accuracy, Code, Index, Data",
+        "correct": false
+      },
+      {
+        "content": "Access, Cache, Insert, Delete",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "SQL",
+    "difficulty": "Senior",
+    "content": "What is SQL injection?",
+    "explanation": "SQL injection is a vulnerability where untrusted input is used to manipulate SQL queries.",
+    "answers": [
+      {
+        "content": "A vulnerability caused by unsafe SQL query construction",
+        "correct": true
+      },
+      {
+        "content": "A database backup strategy",
+        "correct": false
+      },
+      {
+        "content": "A type of JOIN",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "SQL",
+    "difficulty": "Senior",
+    "content": "How can SQL injection be prevented?",
+    "explanation": "Prepared statements and parameterized queries prevent user input from being interpreted as SQL code.",
+    "answers": [
+      {
+        "content": "Use prepared statements and parameterized queries",
+        "correct": true
+      },
+      {
+        "content": "Use string concatenation",
+        "correct": false
+      },
+      {
+        "content": "Disable all indexes",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "SQL",
+    "difficulty": "Senior",
+    "content": "What is the difference between WHERE and HAVING?",
+    "explanation": "WHERE filters rows before grouping, while HAVING filters grouped results.",
+    "answers": [
+      {
+        "content": "WHERE filters rows, HAVING filters groups",
+        "correct": true
+      },
+      {
+        "content": "HAVING is only for DELETE",
+        "correct": false
+      },
+      {
+        "content": "WHERE works only with indexes",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "SQL",
+    "difficulty": "Senior",
+    "content": "What is a unique constraint?",
+    "explanation": "A unique constraint ensures that values in a column or column set are not duplicated.",
+    "answers": [
+      {
+        "content": "It prevents duplicate values in selected columns",
+        "correct": true
+      },
+      {
+        "content": "It allows unlimited duplicates",
+        "correct": false
+      },
+      {
+        "content": "It deletes null values",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "SQL",
+    "difficulty": "Senior",
+    "content": "What is a database migration tool used for?",
+    "explanation": "Migration tools such as Flyway or Liquibase version and apply schema changes consistently.",
+    "answers": [
+      {
+        "content": "Versioning and applying schema changes",
+        "correct": true
+      },
+      {
+        "content": "Generating UI screenshots",
+        "correct": false
+      },
+      {
+        "content": "Running Selenium tests",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "CI/CD",
+    "difficulty": "Senior",
+    "content": "What is continuous integration?",
+    "explanation": "Continuous integration means frequently integrating code changes and validating them automatically.",
+    "answers": [
+      {
+        "content": "Frequently validating integrated code changes",
+        "correct": true
+      },
+      {
+        "content": "Manual deployment once per year",
+        "correct": false
+      },
+      {
+        "content": "Writing tests without running them",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "CI/CD",
+    "difficulty": "Senior",
+    "content": "What should a CI pipeline usually include for test automation?",
+    "explanation": "It should include build, static checks, automated tests, reports and artifact publishing where needed.",
+    "answers": [
+      {
+        "content": "Build, checks, automated tests and reports",
+        "correct": true
+      },
+      {
+        "content": "Only manual approval",
+        "correct": false
+      },
+      {
+        "content": "Only production deployment",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "CI/CD",
+    "difficulty": "Senior",
+    "content": "Why run tests in parallel in CI?",
+    "explanation": "Parallel execution reduces feedback time but requires isolation and stable test data.",
+    "answers": [
+      {
+        "content": "To reduce feedback time",
+        "correct": true
+      },
+      {
+        "content": "To hide flaky tests",
+        "correct": false
+      },
+      {
+        "content": "To skip failed tests",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "CI/CD",
+    "difficulty": "Senior",
+    "content": "What is a build artifact?",
+    "explanation": "A build artifact is an output of the build process, such as a JAR, report or test result file.",
+    "answers": [
+      {
+        "content": "An output produced by the build process",
+        "correct": true
+      },
+      {
+        "content": "A browser cookie",
+        "correct": false
+      },
+      {
+        "content": "An SQL constraint",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "CI/CD",
+    "difficulty": "Senior",
+    "content": "What is the purpose of test reports in CI?",
+    "explanation": "Test reports help analyze failures, trends and quality gates.",
+    "answers": [
+      {
+        "content": "To analyze failures and quality results",
+        "correct": true
+      },
+      {
+        "content": "To replace tests",
+        "correct": false
+      },
+      {
+        "content": "To change application code automatically",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "CI/CD",
+    "difficulty": "Senior",
+    "content": "What is a quality gate?",
+    "explanation": "A quality gate defines conditions that must be met before code can progress, such as test pass rate or coverage threshold.",
+    "answers": [
+      {
+        "content": "Required conditions before promotion",
+        "correct": true
+      },
+      {
+        "content": "A database table lock",
+        "correct": false
+      },
+      {
+        "content": "A browser security warning",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "CI/CD",
+    "difficulty": "Senior",
+    "content": "What is a flaky test quarantine?",
+    "explanation": "It is a process of isolating unreliable tests while they are investigated, without ignoring the underlying issue.",
+    "answers": [
+      {
+        "content": "Isolating unreliable tests for investigation",
+        "correct": true
+      },
+      {
+        "content": "Deleting all failing tests",
+        "correct": false
+      },
+      {
+        "content": "Marking every test as passed",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "CI/CD",
+    "difficulty": "Senior",
+    "content": "What is pipeline as code?",
+    "explanation": "Pipeline as code stores CI/CD pipeline configuration in version control.",
+    "answers": [
+      {
+        "content": "Storing pipeline definitions in version control",
+        "correct": true
+      },
+      {
+        "content": "Writing Java code inside Jenkins only",
+        "correct": false
+      },
+      {
+        "content": "Running pipelines without configuration",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "CI/CD",
+    "difficulty": "Senior",
+    "content": "Why use environment variables in CI?",
+    "explanation": "They provide configurable values such as URLs, credentials references or feature flags without hardcoding.",
+    "answers": [
+      {
+        "content": "To avoid hardcoding environment-specific values",
+        "correct": true
+      },
+      {
+        "content": "To store test assertions",
+        "correct": false
+      },
+      {
+        "content": "To increase browser resolution",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "CI/CD",
+    "difficulty": "Senior",
+    "content": "What is a smoke test stage?",
+    "explanation": "Smoke tests quickly verify that the most critical functionality works after build or deployment.",
+    "answers": [
+      {
+        "content": "Quick check of critical functionality",
+        "correct": true
+      },
+      {
+        "content": "Full exhaustive regression suite",
+        "correct": false
+      },
+      {
+        "content": "Only database backup",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "CI/CD",
+    "difficulty": "Senior",
+    "content": "What is the difference between CI and CD?",
+    "explanation": "CI focuses on integration and validation, while CD focuses on delivery or deployment automation.",
+    "answers": [
+      {
+        "content": "CI validates integration, CD automates delivery/deployment",
+        "correct": true
+      },
+      {
+        "content": "CI is only manual testing",
+        "correct": false
+      },
+      {
+        "content": "CD means code deletion",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "CI/CD",
+    "difficulty": "Senior",
+    "content": "Why should test data be isolated in CI?",
+    "explanation": "Isolated test data prevents tests from interfering with one another and improves repeatability.",
+    "answers": [
+      {
+        "content": "To prevent tests interfering with each other",
+        "correct": true
+      },
+      {
+        "content": "To make tests depend on execution order",
+        "correct": false
+      },
+      {
+        "content": "To avoid using assertions",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Docker",
+    "difficulty": "Senior",
+    "content": "What is a Docker image?",
+    "explanation": "A Docker image is a packaged, immutable template used to create containers.",
+    "answers": [
+      {
+        "content": "An immutable template for containers",
+        "correct": true
+      },
+      {
+        "content": "A running database transaction",
+        "correct": false
+      },
+      {
+        "content": "A Java class loader",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Docker",
+    "difficulty": "Senior",
+    "content": "What is a Docker container?",
+    "explanation": "A container is a running instance of an image with isolated process, filesystem and networking.",
+    "answers": [
+      {
+        "content": "A running isolated instance of an image",
+        "correct": true
+      },
+      {
+        "content": "A Git branch",
+        "correct": false
+      },
+      {
+        "content": "A browser tab",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Docker",
+    "difficulty": "Senior",
+    "content": "What is a Dockerfile?",
+    "explanation": "A Dockerfile contains instructions for building a Docker image.",
+    "answers": [
+      {
+        "content": "Instructions for building an image",
+        "correct": true
+      },
+      {
+        "content": "A Selenium report",
+        "correct": false
+      },
+      {
+        "content": "An SQL schema diagram",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Docker",
+    "difficulty": "Senior",
+    "content": "Why use Docker in test automation?",
+    "explanation": "Docker improves environment consistency and makes local and CI execution more reproducible.",
+    "answers": [
+      {
+        "content": "To create consistent and reproducible test environments",
+        "correct": true
+      },
+      {
+        "content": "To replace all unit tests",
+        "correct": false
+      },
+      {
+        "content": "To remove need for assertions",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Docker",
+    "difficulty": "Senior",
+    "content": "What is Docker Compose used for?",
+    "explanation": "Docker Compose defines and runs multi-container applications such as app plus database.",
+    "answers": [
+      {
+        "content": "Running multi-container setups",
+        "correct": true
+      },
+      {
+        "content": "Compiling Java bytecode",
+        "correct": false
+      },
+      {
+        "content": "Creating HTML templates",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Docker",
+    "difficulty": "Senior",
+    "content": "What is a bind mount?",
+    "explanation": "A bind mount maps a host path into a container.",
+    "answers": [
+      {
+        "content": "Mapping host files or folders into a container",
+        "correct": true
+      },
+      {
+        "content": "Mapping Java methods to SQL",
+        "correct": false
+      },
+      {
+        "content": "Mounting browser windows",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Docker",
+    "difficulty": "Senior",
+    "content": "What is the difference between image and container?",
+    "explanation": "An image is a template; a container is a running instance of that template.",
+    "answers": [
+      {
+        "content": "Image is template, container is running instance",
+        "correct": true
+      },
+      {
+        "content": "Container builds images only",
+        "correct": false
+      },
+      {
+        "content": "They are identical",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Docker",
+    "difficulty": "Senior",
+    "content": "Why should containers be ephemeral?",
+    "explanation": "Containers should be replaceable; persistent data should be stored outside the container where appropriate.",
+    "answers": [
+      {
+        "content": "They should be replaceable and not hold critical state",
+        "correct": true
+      },
+      {
+        "content": "They should never be stopped",
+        "correct": false
+      },
+      {
+        "content": "They should contain production secrets",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Docker",
+    "difficulty": "Senior",
+    "content": "What is a healthcheck in Docker?",
+    "explanation": "A healthcheck verifies whether the containerized service is working as expected.",
+    "answers": [
+      {
+        "content": "A command checking service health",
+        "correct": true
+      },
+      {
+        "content": "A JVM garbage collection setting",
+        "correct": false
+      },
+      {
+        "content": "A test assertion library",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Docker",
+    "difficulty": "Senior",
+    "content": "What is port mapping?",
+    "explanation": "Port mapping exposes a container port through a host port.",
+    "answers": [
+      {
+        "content": "Exposing container ports through host ports",
+        "correct": true
+      },
+      {
+        "content": "Mapping Java objects to tables",
+        "correct": false
+      },
+      {
+        "content": "Assigning test priorities",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Testing Theory",
+    "difficulty": "Senior",
+    "content": "What is the test pyramid?",
+    "explanation": "The test pyramid suggests having many fast unit tests, fewer integration tests and fewer end-to-end tests.",
+    "answers": [
+      {
+        "content": "Many unit tests, fewer integration and E2E tests",
+        "correct": true
+      },
+      {
+        "content": "Only manual tests",
+        "correct": false
+      },
+      {
+        "content": "Only end-to-end tests",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Testing Theory",
+    "difficulty": "Senior",
+    "content": "What is regression testing?",
+    "explanation": "Regression testing verifies that existing functionality still works after changes.",
+    "answers": [
+      {
+        "content": "Checking existing functionality after changes",
+        "correct": true
+      },
+      {
+        "content": "Testing only new features manually",
+        "correct": false
+      },
+      {
+        "content": "Deleting old test cases",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Testing Theory",
+    "difficulty": "Senior",
+    "content": "What is exploratory testing?",
+    "explanation": "Exploratory testing combines learning, test design and execution at the same time.",
+    "answers": [
+      {
+        "content": "Simultaneous learning, design and execution",
+        "correct": true
+      },
+      {
+        "content": "Following only scripted steps",
+        "correct": false
+      },
+      {
+        "content": "Running only unit tests",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Testing Theory",
+    "difficulty": "Senior",
+    "content": "What is boundary value analysis?",
+    "explanation": "Boundary value analysis tests values at the edges of valid and invalid ranges.",
+    "answers": [
+      {
+        "content": "Testing values around range boundaries",
+        "correct": true
+      },
+      {
+        "content": "Testing only random values",
+        "correct": false
+      },
+      {
+        "content": "Testing only database joins",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Testing Theory",
+    "difficulty": "Senior",
+    "content": "What is equivalence partitioning?",
+    "explanation": "Equivalence partitioning divides inputs into groups expected to behave similarly.",
+    "answers": [
+      {
+        "content": "Dividing inputs into behaviorally similar groups",
+        "correct": true
+      },
+      {
+        "content": "Sorting tests alphabetically",
+        "correct": false
+      },
+      {
+        "content": "Splitting code into microservices",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Testing Theory",
+    "difficulty": "Senior",
+    "content": "What is a test oracle?",
+    "explanation": "A test oracle determines the expected result for a test.",
+    "answers": [
+      {
+        "content": "A mechanism for determining expected results",
+        "correct": true
+      },
+      {
+        "content": "A database vendor only",
+        "correct": false
+      },
+      {
+        "content": "A CI server",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Testing Theory",
+    "difficulty": "Senior",
+    "content": "What is risk-based testing?",
+    "explanation": "Risk-based testing prioritizes testing based on probability and impact of failure.",
+    "answers": [
+      {
+        "content": "Prioritizing tests by probability and impact of failure",
+        "correct": true
+      },
+      {
+        "content": "Running tests alphabetically",
+        "correct": false
+      },
+      {
+        "content": "Testing only low-risk areas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Testing Theory",
+    "difficulty": "Senior",
+    "content": "What is shift-left testing?",
+    "explanation": "Shift-left testing means starting quality activities earlier in the development lifecycle.",
+    "answers": [
+      {
+        "content": "Starting testing and quality checks earlier",
+        "correct": true
+      },
+      {
+        "content": "Moving tests to production only",
+        "correct": false
+      },
+      {
+        "content": "Skipping unit tests",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Testing Theory",
+    "difficulty": "Senior",
+    "content": "What is the difference between verification and validation?",
+    "explanation": "Verification asks whether we built the product right; validation asks whether we built the right product.",
+    "answers": [
+      {
+        "content": "Verification checks correctness to spec, validation checks user need",
+        "correct": true
+      },
+      {
+        "content": "They always mean the same thing",
+        "correct": false
+      },
+      {
+        "content": "Validation only means compiling code",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Testing Theory",
+    "difficulty": "Senior",
+    "content": "What is a non-functional test?",
+    "explanation": "Non-functional testing evaluates qualities such as performance, security, usability or reliability.",
+    "answers": [
+      {
+        "content": "Testing qualities like performance, security and reliability",
+        "correct": true
+      },
+      {
+        "content": "Testing only business rules",
+        "correct": false
+      },
+      {
+        "content": "Testing only Java syntax",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Testing Theory",
+    "difficulty": "Senior",
+    "content": "What is test coverage?",
+    "explanation": "Test coverage measures how much code, requirements or risk areas are exercised by tests.",
+    "answers": [
+      {
+        "content": "A measure of what tests exercise",
+        "correct": true
+      },
+      {
+        "content": "A guarantee of no bugs",
+        "correct": false
+      },
+      {
+        "content": "A replacement for exploratory testing",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Testing Theory",
+    "difficulty": "Senior",
+    "content": "What is a defect lifecycle?",
+    "explanation": "A defect lifecycle describes states a defect goes through, such as new, assigned, fixed, retest and closed.",
+    "answers": [
+      {
+        "content": "States a defect passes through until closure",
+        "correct": true
+      },
+      {
+        "content": "A database transaction lifecycle",
+        "correct": false
+      },
+      {
+        "content": "A browser session lifecycle",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Spring Boot",
+    "difficulty": "Senior",
+    "content": "What is dependency injection in Spring?",
+    "explanation": "Dependency injection provides required dependencies from outside a class, improving decoupling and testability.",
+    "answers": [
+      {
+        "content": "Providing dependencies from outside the class",
+        "correct": true
+      },
+      {
+        "content": "Creating dependencies with new everywhere",
+        "correct": false
+      },
+      {
+        "content": "Disabling constructors",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Spring Boot",
+    "difficulty": "Senior",
+    "content": "What is the difference between @Controller and @RestController?",
+    "explanation": "@Controller usually returns views, while @RestController returns response bodies such as JSON.",
+    "answers": [
+      {
+        "content": "@Controller returns views, @RestController returns response bodies",
+        "correct": true
+      },
+      {
+        "content": "@RestController only supports databases",
+        "correct": false
+      },
+      {
+        "content": "They are unrelated to web apps",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Spring Boot",
+    "difficulty": "Senior",
+    "content": "What is @Service used for?",
+    "explanation": "@Service marks a class as a Spring-managed component containing business logic.",
+    "answers": [
+      {
+        "content": "Marking a business/service class as a Spring bean",
+        "correct": true
+      },
+      {
+        "content": "Creating database tables",
+        "correct": false
+      },
+      {
+        "content": "Formatting HTML only",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Spring Boot",
+    "difficulty": "Senior",
+    "content": "What is @Repository used for?",
+    "explanation": "@Repository marks persistence-layer components and can translate persistence exceptions.",
+    "answers": [
+      {
+        "content": "Marking persistence-layer components",
+        "correct": true
+      },
+      {
+        "content": "Creating CSS files",
+        "correct": false
+      },
+      {
+        "content": "Starting a browser driver",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Spring Boot",
+    "difficulty": "Senior",
+    "content": "What is @Entity used for?",
+    "explanation": "@Entity marks a class as a JPA-managed object mapped to a database table.",
+    "answers": [
+      {
+        "content": "Mapping a class to a database table",
+        "correct": true
+      },
+      {
+        "content": "Mapping HTML templates to URLs",
+        "correct": false
+      },
+      {
+        "content": "Creating REST clients only",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Spring Boot",
+    "difficulty": "Senior",
+    "content": "What is application.properties used for?",
+    "explanation": "It stores application configuration such as datasource, server port and framework settings.",
+    "answers": [
+      {
+        "content": "Application configuration",
+        "correct": true
+      },
+      {
+        "content": "Compiled Java bytecode",
+        "correct": false
+      },
+      {
+        "content": "Test screenshots",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Spring Boot",
+    "difficulty": "Senior",
+    "content": "What is Spring Boot auto-configuration?",
+    "explanation": "Auto-configuration configures beans based on classpath dependencies and application settings.",
+    "answers": [
+      {
+        "content": "Automatic bean configuration based on classpath and settings",
+        "correct": true
+      },
+      {
+        "content": "Automatic code review",
+        "correct": false
+      },
+      {
+        "content": "Automatic browser testing",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Spring Boot",
+    "difficulty": "Senior",
+    "content": "What is a Spring bean?",
+    "explanation": "A Spring bean is an object managed by the Spring IoC container.",
+    "answers": [
+      {
+        "content": "An object managed by the Spring container",
+        "correct": true
+      },
+      {
+        "content": "A JSON property only",
+        "correct": false
+      },
+      {
+        "content": "A database index",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Spring Boot",
+    "difficulty": "Senior",
+    "content": "Why prefer constructor injection?",
+    "explanation": "Constructor injection makes dependencies explicit, supports final fields and is easier to test.",
+    "answers": [
+      {
+        "content": "It makes dependencies explicit and testable",
+        "correct": true
+      },
+      {
+        "content": "It hides dependencies",
+        "correct": false
+      },
+      {
+        "content": "It requires no constructors",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Spring Boot",
+    "difficulty": "Senior",
+    "content": "What is @GetMapping used for?",
+    "explanation": "@GetMapping maps HTTP GET requests to controller methods.",
+    "answers": [
+      {
+        "content": "Mapping HTTP GET requests",
+        "correct": true
+      },
+      {
+        "content": "Generating SQL INSERTs",
+        "correct": false
+      },
+      {
+        "content": "Creating Docker images",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Spring Boot",
+    "difficulty": "Senior",
+    "content": "What is @RequestParam used for?",
+    "explanation": "@RequestParam reads query parameters or form parameters from a request.",
+    "answers": [
+      {
+        "content": "Reading query or form parameters",
+        "correct": true
+      },
+      {
+        "content": "Reading database indexes",
+        "correct": false
+      },
+      {
+        "content": "Creating path variables only",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Spring Boot",
+    "difficulty": "Senior",
+    "content": "What is @PathVariable used for?",
+    "explanation": "@PathVariable extracts values from URI path segments.",
+    "answers": [
+      {
+        "content": "Extracting values from URL path segments",
+        "correct": true
+      },
+      {
+        "content": "Reading JSON schema files",
+        "correct": false
+      },
+      {
+        "content": "Injecting repositories",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Test Automation Architecture",
+    "difficulty": "Senior",
+    "content": "What is the purpose of a test framework abstraction layer?",
+    "explanation": "An abstraction layer hides low-level tool details and makes tests easier to maintain and migrate.",
+    "answers": [
+      {
+        "content": "To hide tool details and improve maintainability",
+        "correct": true
+      },
+      {
+        "content": "To make tests longer",
+        "correct": false
+      },
+      {
+        "content": "To remove reporting",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Test Automation Architecture",
+    "difficulty": "Senior",
+    "content": "Why separate test data from test logic?",
+    "explanation": "Separating test data improves readability, reuse and maintainability.",
+    "answers": [
+      {
+        "content": "It improves readability, reuse and maintainability",
+        "correct": true
+      },
+      {
+        "content": "It makes tests impossible to debug",
+        "correct": false
+      },
+      {
+        "content": "It removes assertions",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Test Automation Architecture",
+    "difficulty": "Senior",
+    "content": "What is the role of a base test class?",
+    "explanation": "A base test class can centralize common setup, teardown and utilities, but should not become a dumping ground.",
+    "answers": [
+      {
+        "content": "Centralizing common setup and teardown",
+        "correct": true
+      },
+      {
+        "content": "Putting all test assertions in one place",
+        "correct": false
+      },
+      {
+        "content": "Replacing all Page Objects",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "category": "Test Automation Architecture",
+    "difficulty": "Senior",
+    "content": "What is test isolation?",
+    "explanation": "Test isolation means each test can run independently without relying on state from another test.",
+    "answers": [
+      {
+        "content": "Tests can run independently",
+        "correct": true
+      },
+      {
+        "content": "Tests must run in fixed order",
+        "correct": false
+      },
+      {
+        "content": "Tests share one mutable global state",
+        "correct": false
+      }
+    ]
+  }
+]

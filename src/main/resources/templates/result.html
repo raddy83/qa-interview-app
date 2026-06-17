@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Result</title>
+</head>
+<body>
+
+<h2 th:text="${correct ? 'Correct!' : 'Wrong answer'}"></h2>
+
+<h3>Explanation:</h3>
+<p th:text="${question.explanation}"></p>
+
+<a href="/">Back to questions</a>
+
+</body>
+</html>
