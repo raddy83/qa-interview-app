@@ -1,0 +1,6 @@
+services:
+  qa-interview-app:
+    build: .
+    container_name: qa-interview-app
+    ports:
+      - "8080:8080"
