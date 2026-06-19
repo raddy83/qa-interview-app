@@ -1,5 +1,6 @@
-package com.example.qa_interview_app.dto;
+package com.example.qa_interview_app.session;
 
+import com.example.qa_interview_app.dto.QuizAnswerResultDto;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,4 +14,5 @@ public class QuizSession {
     private List<Long> questionIds = new ArrayList<>();
     private int currentQuestionIndex = 0;
     private int score = 0;
+    private List<QuizAnswerResultDto> answers = new ArrayList<>();
 }
