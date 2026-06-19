@@ -63,4 +63,12 @@ public class QuestionService {
                 .limit(limit)
                 .toList();
     }
+
+    public Question getQuestionByIdWithShuffledAnswers(Long id) {
+        Question question = getQuestionById(id);
+
+        Collections.shuffle(question.getAnswers());
+
+        return question;
+    }
 }

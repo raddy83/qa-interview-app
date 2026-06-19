@@ -35,7 +35,7 @@ public class QuizController {
 
     @GetMapping("/questions/{id}")
     public String question(@PathVariable Long id, Model model) {
-        model.addAttribute("question", questionService.getQuestionById(id));
+        model.addAttribute("question", questionService.getQuestionByIdWithShuffledAnswers(id));
         return "question";
     }
 
@@ -45,7 +45,7 @@ public class QuizController {
             @RequestParam Long answerId,
             Model model
     ) {
-        Question question = questionService.getQuestionById(id);
+        Question question = questionService.getQuestionByIdWithShuffledAnswers(id);
         boolean correct = questionService.checkAnswer(id, answerId);
 
         model.addAttribute("question", question);
@@ -84,7 +84,7 @@ public class QuizController {
         Long questionId = quizSession.getQuestionIds()
                 .get(quizSession.getCurrentQuestionIndex());
 
-        Question question = questionService.getQuestionById(questionId);
+        Question question = questionService.getQuestionByIdWithShuffledAnswers(questionId);
 
         model.addAttribute("question", question);
         model.addAttribute("currentNumber", quizSession.getCurrentQuestionIndex() + 1);
