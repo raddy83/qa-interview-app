@@ -1,13 +1,17 @@
 package com.example.qa_interview_app.controller;
 
+import com.example.qa_interview_app.dto.QuizAnswerResultDto;
+import com.example.qa_interview_app.dto.QuizReviewItemDto;
 import com.example.qa_interview_app.model.Question;
+import com.example.qa_interview_app.model.Answer;
 import com.example.qa_interview_app.service.QuestionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import com.example.qa_interview_app.dto.QuizSession;
+import com.example.qa_interview_app.session.QuizSession;
 import jakarta.servlet.http.HttpSession;
+
 import java.util.List;
 
 @Controller
@@ -105,15 +109,21 @@ public class QuizController {
             return "redirect:/quiz/start";
         }
 
-        if (questionService.checkAnswer(questionId, answerId)) {
+        boolean correct = questionService.checkAnswer(questionId, answerId);
+
+        if (correct) {
             quizSession.setScore(quizSession.getScore() + 1);
         }
 
-        quizSession.setCurrentQuestionIndex(
-                quizSession.getCurrentQuestionIndex() + 1
+        quizSession.getAnswers().add(
+                new QuizAnswerResultDto(questionId, answerId, correct)
         );
 
+        quizSession.setCurrentQuestionIndex(
+                quizSession.getCurrentQuestionIndex() + 1);
+
         return "redirect:/quiz/question";
+
     }
 
     @GetMapping("/quiz/result")
@@ -129,10 +139,41 @@ public class QuizController {
         double percentage = totalQuestions == 0 ? 0 : (score * 100.0) / totalQuestions;
         boolean passed = percentage >= 75.0;
 
+        List<QuizReviewItemDto> wrongAnswers = quizSession.getAnswers()
+                .stream()
+                .filter(answerResult -> !answerResult.isCorrect())
+                .map(answerResult -> {
+                    Question question = questionService.getQuestionById(answerResult.getQuestionId());
+
+                    String selectedAnswer = question.getAnswers()
+                            .stream()
+                            .filter(answer -> answer.getId().equals(answerResult.getSelectedAnswerId()))
+                            .findFirst()
+                            .map(Answer::getContent)
+                            .orElse("Unknown answer");
+
+                    String correctAnswer = question.getAnswers()
+                            .stream()
+                            .filter(Answer::isCorrect)
+                            .findFirst()
+                            .map(Answer::getContent)
+                            .orElse("No correct answer defined");
+
+                    return new QuizReviewItemDto(
+                            question.getContent(),
+                            selectedAnswer,
+                            correctAnswer,
+                            question.getExplanation(),
+                            question.getCategory()
+                    );
+                })
+                .toList();
+
         model.addAttribute("score", score);
         model.addAttribute("totalQuestions", totalQuestions);
         model.addAttribute("percentage", percentage);
         model.addAttribute("passed", passed);
+        model.addAttribute("wrongAnswers", wrongAnswers);
 
         session.removeAttribute("quizSession");
 
