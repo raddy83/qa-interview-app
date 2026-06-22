@@ -9,6 +9,11 @@
 
 <a href="/quiz/start">Start full quiz</a>
 
+<form th:action="@{/admin/questions/import-api}" method="post">
+    <input type="number" name="amount" value="20" min="1" max="50">
+    <button type="submit">Import questions from API</button>
+</form>
+
 <form method="get" action="/">
     <label for="category">Filter by category:</label>
 
