@@ -6,6 +6,7 @@ import com.example.qa_interview_app.model.Answer;
 import com.example.qa_interview_app.model.Question;
 import com.example.qa_interview_app.repository.QuestionRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -20,8 +21,15 @@ public class OpenTriviaImportService {
     private final RestTemplate restTemplate;
     private final QuestionRepository questionRepository;
 
+    @Value("${integration.open-trivia.base-url}")
+    private String baseUrl;
+
     public int importQuestions(int amount) {
-        String url = "https://opentdb.com/api.php?amount=" + amount + "&type=multiple";
+        String url =
+                baseUrl
+                        + "?amount="
+                        + amount
+                        + "&type=multiple";
 
         OpenTriviaResponseDto response =
                 restTemplate.getForObject(url, OpenTriviaResponseDto.class);
