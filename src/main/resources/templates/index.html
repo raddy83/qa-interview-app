@@ -14,6 +14,20 @@
     <button type="submit">Import questions from API</button>
 </form>
 
+<form
+        th:action="@{/admin/import/stackoverflow}"
+        method="post">
+
+    <input
+            name="tag"
+            value="java">
+
+    <button>
+        Import StackOverflow
+    </button>
+
+</form>
+
 <form method="get" action="/">
     <label for="category">Filter by category:</label>
 
